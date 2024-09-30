@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 
-model_path = (r'C:\Users\Hp\Desktop\Data_Science_Jupyter\Project_1_digi_crome_capstone\Notebook\Gradient_Boosting.pkl')
+model_path = (r'C:\Users\zubai\Desktop\Data_Science_Jupyter\Project_1_digi_crome_capstone\Gradient_Boosting_Regressor.pkl')
 
 model = pickle.load(open(model_path,'rb'))
 
@@ -12,7 +12,7 @@ model = pickle.load(open(model_path,'rb'))
 app = Flask(__name__)
 
 from pathlib import Path
-file_path = Path(r'C:\Users\Hp\Desktop\Data_Science_Jupyter\Project_1_digi_crome_capstone\Notebook\features_Property_data.csv')
+file_path = Path(r'C:\Users\zubai\Desktop\Data_Science_Jupyter\Project_1_digi_crome_capstone\Data\features_Property_data.csv')
 data = pd.read_csv(file_path)
 
 @app.route('/')
